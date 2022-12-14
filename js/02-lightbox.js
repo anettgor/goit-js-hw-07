@@ -4,12 +4,12 @@ import { galleryItems } from "./gallery-items.js";
 const gallery = document.querySelector(".gallery");
 
 galleryItems.forEach((galleryItem) => {
-  const newLi = document.createElement("li");
-  gallery.appendChild(newLi);
-  newLi.classList.add("gallery__item");
+  // const newLi = document.createElement("li");
+  // gallery.appendChild(newLi);
+  // newLi.classList.add("gallery__item");
 
   const link = document.createElement("a");
-  newLi.appendChild(link);
+  gallery.appendChild(link);
   link.classList.add("gallery__item");
   link.href = galleryItem.original;
 
